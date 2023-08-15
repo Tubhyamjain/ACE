@@ -35,6 +35,8 @@
 .options-toggle a:hover {
     color: #0056b3;
 }
+/* Add this code to your existing styles.css file */
+
 body {
   font-family: Arial, sans-serif;
   background-color: #f0f0f0;
@@ -44,11 +46,6 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-}
-
-header {
-  text-align: center;
-  margin-bottom: 30px;
 }
 
 .box-container {
@@ -61,23 +58,18 @@ header {
 }
 
 .box {
-  position: relative;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   padding: 20px;
   text-align: center;
   width: calc(33.33% - 40px);
-  transition: transform 0.3s;
   margin-bottom: 30px;
   cursor: pointer;
-  display: flex; /* Added */
-  flex-direction: column; /* Added */
-  align-items: center; /* Added */
 }
 
-.box:hover {
-  transform: translateY(-10px);
+.box h2 {
+  margin: 0;
 }
 
 footer {
@@ -97,13 +89,9 @@ footer {
 }
 
 /* Add this media query for responsiveness */
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 768px) {
   .box {
     width: calc(100% - 40px);
   }
 }
 
-  .box {
-    width: calc(100% - 40px);
-  }
-}
