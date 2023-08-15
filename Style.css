@@ -36,20 +36,11 @@
     color: #0056b3;
 }
 @media screen and (max-width: 768px) {
-  /* Adjust the maximum width as needed */
   body {
     padding: 20px;
   }
 
-  .box-container {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-
   .box {
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0;
+    width: calc(100% - 40px);
   }
 }
