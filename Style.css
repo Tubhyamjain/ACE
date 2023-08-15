@@ -1,0 +1,37 @@
+/* Add this to your styles.css file */
+.options-toggle {
+    position: relative;
+}
+
+.options-toggle .options {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 10%;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    width: 160px;
+    text-align: left;
+}
+
+.options-toggle:hover .options {
+    display: block;
+}
+
+.options-toggle i {
+    cursor: pointer;
+}
+
+.options-toggle a {
+    display: block;
+    padding: 8px;
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.options-toggle a:hover {
+    color: #0056b3;
+}
