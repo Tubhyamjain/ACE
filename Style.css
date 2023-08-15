@@ -97,7 +97,7 @@ footer {
 }
 
 /* Add this media query for responsiveness */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1080px) {
   .box {
     width: calc(100% - 40px);
   }
