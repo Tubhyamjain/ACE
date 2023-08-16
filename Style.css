@@ -237,15 +237,22 @@ body {
     .box {
         width: 60%; /* Make boxes full width on smaller screens */
     }
-    .title-animation {
-        font-size: 24px; /* Reduce font size for smaller screens */
+    .title-animation-index {
+        font-size: 30px; /* Adjust the font size as needed */
+        text-align: center;
+        font-family:'Times New Roman', Times, serif, monospace;
+        color: white; /* Set the title text color to white */
+        text-shadow: -1px -1px 5px #000, 1px -1px 2px #000, -1px 1px 2px #000, 1px 1px 2px #000; /* Create a white outline effect */
+        display: inline-block;
+        animation: pop-up 3.7s cubic-bezier(0.68, -1.70, 0.57, 6.55) forwards;
     }
-}
-.credits{
-    position:relative;
-    bottom:0px;
-    font-size: 20px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, monospace;
-    color: white;
-    text-shadow: -1px -1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, 1px 1px 2px #000
+    .intro-description {
+        font-size: 15px; /* Adjust the font size as needed */
+        text-align: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: white; /* Set the description text color to white */
+        text-shadow: -1px -1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, 1px 1px 2px #000; /* Create a white outline effect */
+        display: inline-block;
+        animation: pop-up 3.5s cubic-bezier(0.68, -2.70, 0.57, 6.55) forwards;
+    }
 }
