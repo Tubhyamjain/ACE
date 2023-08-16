@@ -263,3 +263,17 @@ body {
     height: 100%;
     animation: glitch 3s infinite linear alternate;
 }
+@media (max-width: 768px) {
+    .box-container {
+        flex-direction: column; /* Stack boxes vertically on smaller screens */
+        align-items: center; /* Center align boxes */
+    }
+    
+    .box {
+        width: 90%; /* Make boxes full width on smaller screens */
+    }
+    
+    .title-animation {
+        font-size: 24px; /* Reduce font size for smaller screens */
+    }
+}
