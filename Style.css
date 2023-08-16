@@ -119,8 +119,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     min-height: 100vh;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative; /* Add this line */
   }
 
   .box-container {
@@ -136,20 +139,23 @@
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    padding: 20px;
+    padding: 13.px;
     width: calc(33.33% - 40px);
     margin-bottom: 30px;
   }
 
   footer {
-    margin-top: auto;
-    text-align: center;
-    padding: 10px;
     background-color: #333;
     color: #fff;
-    border-radius: 10px;
-  }
-  .subject-content {
+    text-align:center;
+    padding: 0px;
+    font-size: 12px;
+    width: 100%; /* Set width to 100% */
+    position: absolute; /* Position the footer at the bottom */
+    bottom: 0; /* Align at the bottom */
+    left: 0; /* Align to the left */
+}
+ .subject-content {
     opacity: 0;
     transform: translateY(50%);
     animation: fadeInUp 1s ease forwards;
@@ -169,7 +175,6 @@
     font-size: 33px; /* Adjust the font size as needed */
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
-    
 }
 
 .intro-description1 {
@@ -213,6 +218,40 @@ body {
     display: inline-block;
     animation: pop-up 3.7s cubic-bezier(0.68, -1.70, 0.57, 6.55) forwards;
 }
+#syllabus {
+    background-color: #f9f9f9;
+    border: 2px solid #ddd;
+  }
+  
+  #syllabus h2 {
+    margin-bottom: 10px;
+  }
+  
+  #syllabus p {
+    margin-bottom: 20px;
+  }
+  
+  #syllabus button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #syllabus button:hover {
+    background-color: #0056b3;
+}
+.hidden {
+    display: none;
+  }
+  
+  #syllabus-message {
+    margin-top: 10px;
+    font-size: 14px;
+    color: red;
+  }
 
 @keyframes pop-up {
     0% {
@@ -254,5 +293,8 @@ body {
         text-shadow: -1px -1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, 1px 1px 2px #000; /* Create a white outline effect */
         display: inline-block;
         animation: pop-up 3.5s cubic-bezier(0.68, -2.70, 0.57, 6.55) forwards;
+    }
+    .index-background{
+        background-size: auto 21%;
     }
 }
