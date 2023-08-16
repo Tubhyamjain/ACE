@@ -276,7 +276,7 @@ body {
         font-size: 24px; /* Reduce font size for smaller screens */
     }
     .glitch{
-        position: absolute;
+        position: fixed;
         bottom: 1px;
         right: 0px;
         font-size: 10px;
