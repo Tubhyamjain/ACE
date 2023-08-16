@@ -228,14 +228,14 @@ body {
         opacity: 1;
     }
 }
-@media (max-width: 768px) {
+@media (max-width: 2140px) {
     .box-container {
         flex-direction:row; /* Stack boxes vertically on smaller screens */
         align-items: center; /* Center align boxes */
     }
     
     .box {
-        width: 60%; /* Make boxes full width on smaller screens */
+        width: 50%; /* Make boxes full width on smaller screens */
     }
     .title-animation-index {
         font-size: 30px; /* Adjust the font size as needed */
