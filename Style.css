@@ -35,63 +35,231 @@
 .options-toggle a:hover {
     color: #0056b3;
 }
-/* Add this code to your existing styles.css file */
-
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-}
-
-.box-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.box {
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-  padding: 20px;
-  text-align: center;
-  width: calc(33.33% - 40px);
-  margin-bottom: 30px;
-  cursor: pointer;
-}
-
-.box h2 {
-  margin: 0;
-}
-
-footer {
-  margin-top: auto;
-  text-align: center;
-  padding: 10px;
-  background-color: #333;
-  color: #fff;
-}
-
-.credits {
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-  color: #999;
-  font-size: 12px;
-}
-
-/* Add this media query for responsiveness */
-@media screen and (max-width: 768px) {
-  .box {
-    width: calc(100% - 40px);
+.box a {
+    color: inherit; /* Inherit the color from the parent element */
+    text-decoration: none; /* Remove the underline */
+    transition: color 0.3s; /* Add a smooth color transition on hover */
   }
+  
+  .box a:hover {
+    color: #007bff; /* Change color on hover */
+  }
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  nav ul li a:hover {
+    color: #0056b3;
+  }
+  
+  .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .box {
+    position: relative;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    width: calc(33.33% - 40px);
+    transition: transform 0.3s;
+    margin-bottom: 30px;
+    cursor: pointer; /* Add this line */
+  }
+  
+  .box:hover {
+    transform: translateY(-10px);
+  }
+  
+  footer {
+    margin-top: auto;
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+
+  .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .box {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: calc(33.33% - 40px);
+    margin-bottom: 30px;
+  }
+
+  footer {
+    margin-top: auto;
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 10px;
+  }
+  .subject-content {
+    opacity: 0;
+    transform: translateY(50%);
+    animation: fadeInUp 1s ease forwards;
 }
 
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.intro-title1 {
+    font-size: 33px; /* Adjust the font size as needed */
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+.intro-description1 {
+    font-size: 21px; /* Adjust the font size as needed */
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Apply background image to the index page */
+.index-background {
+    background-image: url('warning--data-transfer-in-progress-507065943-59c6d2a70d327a001141794d-5bb792f246e0fb0051a88f9c.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.intro-description {
+    font-size: 26px; /* Adjust the font size as needed */
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white; /* Set the description text color to white */
+    text-shadow: -1px -1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000, 1px 1px 2px #000; /* Create a white outline effect */
+    display: inline-block;
+    animation: pop-up 3.5s cubic-bezier(0.68, -2.70, 0.57, 6.55) forwards;
+}
+
+.title-animation-index {
+    font-size: 45px; /* Adjust the font size as needed */
+    text-align: center;
+    font-family:'Times New Roman', Times, serif, monospace;
+    color: white; /* Set the title text color to white */
+    text-shadow: -1px -1px 5px #000, 1px -1px 2px #000, -1px 1px 2px #000, 1px 1px 2px #000; /* Create a white outline effect */
+    display: inline-block;
+    animation: pop-up 3.7s cubic-bezier(0.68, -1.70, 0.57, 6.55) forwards;
+}
+
+@keyframes pop-up {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(-30px);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.glitch {
+    position: absolute;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, monospace;
+    bottom: 10px;
+    right: 10px;
+    color: hsl(0, 0%, 100%);
+    font-size: 30px;
+    text-shadow: -1px -1px 5px #000, 1px -1px 2px #000, -1px 1px 2px #000, 1px 1px 2px #000; /* Create a white outline effect */
+    animation: glitch 2.7s infinite linear alternate;
+}
+
+@keyframes glitch {
+    0%, 20%, 100% {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        transform: translateY(0);
+    }
+    10% {
+        clip-path: polygon(0 200%, 100% 0, 100% 0, 0 200%);
+        transform: translateY(-2%);
+    }
+    30% {
+        clip-path: polygon(0 20%, 100% 100%, 100% 100%, 0 20%);
+        transform: translateY(2%);
+    }
+}
+
+.glitch:before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    animation: glitch 3s infinite linear alternate;
+}
