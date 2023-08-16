@@ -279,5 +279,7 @@ body {
         position: absolute;
         bottom: 1px;
         right: 0px;
+        font-size: 10px;
+        align-items: right;
     }
 }
