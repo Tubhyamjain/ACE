@@ -160,7 +160,7 @@
  .subject-content {
     opacity: 0;
     transform: translateY(50%);
-    animation: fadeInUp 1s ease forwards;
+    animation: fadeInUp 1.7s ease forwards;
 }
 
 @keyframes fadeInUp {
